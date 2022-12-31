@@ -5,7 +5,7 @@ const hypotenuseOutput = document.querySelector("#hypotenuse-result");
 
 function squareInputs(adjacent, opposite){
     const inputSquare =  Math.sqrt((adjacent*adjacent) + (opposite*opposite));
-    return inputSquare;
+    return inputSquare.toFixed(2);
 }
 
 function caculateHypotenuse(){
