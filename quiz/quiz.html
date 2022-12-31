@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Quizz</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+
+    <main class="container">
+        <h1 class="heading">Tiangle Quiz</h1>
+        <form class="quiz-form">
+            <fieldset class="question-container">
+                <legend>What is the third angle for the triangle where angle 1 = 45° and angle 2 = 45°?</legend>
+                <label for="first-question-first-option">
+                    <input type="radio" name="first-question" id="first-question-first-option" value="45°"> 45°
+                </label>
+                <label for="second-question-second-option">
+                    <input type="radio" name="first-question" id="second-question-second-option" value="60°"> 60°
+                </label>
+                <label for="third-question-third-option">
+                    <input type="radio" name="first-question" id="third-question-third-option" value="90°"> 90°
+                </label>
+            </fieldset>
+            <fieldset class="question-container">
+                <legend>If a triangle has an angle of 90°, what is it called?</legend>
+                <label for="second-question-first-option">
+                    <input type="radio" name="second-question" id="second-question-first-option" value="acute" required> Acute
+                </label>
+                <label for="second-question-second-option">
+                    <input type="radio" name="second-question" id="second-question-second-option" value="right angle triangle"> Right angle triangle 
+                </label>
+                <label for="second-question-third-option">
+                    <input type="radio" name="second-question" id="second-question-third-option" value="obtuse" required> Obtuse
+                </label>
+            </fieldset>
+        </form>
+        <button id="answers-btn">Submit</button>
+        <p id="show-message"></p>
+    </main>
+
+    <!-- Script -->
+    <script src="quizz.js"></script>
+</body>
+
+</html>
