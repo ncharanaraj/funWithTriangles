@@ -1,0 +1,83 @@
+:root {
+    --primary-dark: #5b21b6;
+    --primary-light: #8b5cf6;
+    --secondary-dark: #115e59;
+    --secondary-light: #e8ea5e;
+    --text-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    padding: 1rem;
+    background-color: var(--primary-dark);
+    color: var(--text-color);
+    width: 100%;
+    text-align: center;
+}
+
+.container {
+    margin-top: 3rem;
+    border: 1px solid var(--secondary-dark);
+    padding: 1rem;
+    border-radius: 0.3rem;
+    box-shadow: 2px 2px var(--secondary-dark);
+}
+
+.container-field {
+    display: flex;
+    flex-direction: column;
+    margin: 0.2rem 0;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+}
+
+input[type="number"] {
+    margin-top: 0.5rem;
+    height: 5vh;
+    padding: 0.5rem;
+    border: 1px solid var(--primary-light);
+    border-radius: 0.2rem;
+}
+
+#triangle-btn {
+    margin: 1rem 0 1rem 0.5rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.2rem;
+    text-transform: uppercase;
+    background-color: var(--primary-light);
+    color: var(--text-color);
+}
+
+#triangle-btn:hover {
+    background-color: var(--secondary-light);
+}
+
+#showMessage {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+footer {
+    bottom: 0;
+    background-color: var(--primary-dark);
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    color: var(--text-color);
+    position: fixed;
+}
+
