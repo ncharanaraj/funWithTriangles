@@ -1,8 +1,8 @@
 :root {
     --primary-dark: #5b21b6;
     --primary-light: #8b5cf6;
-    --secondary-dark: #115e59;
-    --secondary-light: #e8ea5e;
+    --secondary-dark: #000000;
+    --secondary-light: #bebebe;
     --text-color: #ffffff;
 }
 
@@ -32,7 +32,7 @@ nav {
     border: 1px solid var(--secondary-dark);
     padding: 1rem;
     border-radius: 0.3rem;
-    box-shadow: 2px 2px var(--secondary-dark);
+    box-shadow: 3px 3px var(--secondary-dark);
 }
 
 .container-field {
@@ -40,6 +40,13 @@ nav {
     flex-direction: column;
     margin: 0.2rem 0;
     padding: 0.5rem;
+    border-radius: 0.2rem;
+}
+
+.container-field > label::before {
+    content: "∠";
+    color: var(--primary-light);
+    padding: 0.1em;
     border-radius: 0.2rem;
 }
 
@@ -64,11 +71,12 @@ input[type="number"] {
 
 #triangle-btn:hover {
     background-color: var(--secondary-light);
+    color: #000000;
 }
 
 #showMessage {
-    padding: 0.5rem;
-    text-align: center;
+    padding-left: 0.5rem;
+    text-align: start;
 }
 
 footer {

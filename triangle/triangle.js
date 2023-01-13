@@ -13,9 +13,9 @@ function isTriangle(){
     const sumOfAngles = calculateSumOfAngles(Number(angleOne.value), Number(angleTwo.value), Number(angleThree.value))
 
     if(sumOfAngles === 180){
-        triangleMessage.innerText = "Possible to make a🔺"
+        triangleMessage.innerText = "Possible to make a TRIANGLE"
     } else {
-        triangleMessage.innerText = "Not possible to make a🔺"
+        triangleMessage.innerText = "Not possible to make a TRIANGLE"
     }
 }
 
